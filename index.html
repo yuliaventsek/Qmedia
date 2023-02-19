@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Qmedia</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="signUp">
+            <div class="signUp-text">
+                <p>Отправить заявку на участие в семинаре</p>
+            </div>
+            <p class="text">Организаторы свяжутся с вами для подтверждения записи. <br>
+                Участие в семинаре <u>бесплатное</u>. </p>
+            <div class="body">
+                <form action="#" id="form" class="form__body">
+                    <div class="input-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" name="name" id="name" value="" placeholder="Иван" class="req" />
+                    </div>
+
+                    <div class="input-group">
+                        <label for="surname">Ваша фамилия:</label>
+                        <input type="text" name="surname" id="surname" value="" placeholder="Иванов" class="req" />
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Контактный email:</label>
+                        <input type="email" name="email" id="email" value="" placeholder="example@mail.com"
+                            class="req_email" />
+                    </div>
+
+                    <div class="input-group">
+                        <label for="seminars">Интересующий семинар:</label>
+                        <select name="seminars" required>
+                            <option disabled selected value="">Выбрать</option>
+                            <option value="Современное искусство">Современное искусство</option>
+                        </select>
+                    </div>
+                    <p class="text2">
+                        Все поля обязательны для заполнения. <br>
+                        Отправляя заявку, вы соглашаетесь с договором публичной оферты и политикой обработки данных.
+                    </p>
+
+                    <div class="btn">
+                        <button class="button color" type="submit">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

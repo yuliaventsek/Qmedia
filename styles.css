@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, #ffcccc 10%, #ccccff 25%, #a29bfe 50%, #ffccff 90%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite;
+}
+
+@-webkit-keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes AnimateBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    width: 700px;
+    min-height: 400px;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    padding: 25px 35px;
+}
+
+.container .signUp-text {
+    color: #111;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 24px;
+}
+
+.container .text {
+    color: #111;
+    margin-bottom: 20px;
+    display: block;
+
+}
+
+.container .text2 {
+    color: #111;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 12px;
+}
+
+.container .signUp .input-group {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+.container .signUp .input-group input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    margin-top: 4px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    transition: .3s;
+}
+
+.container .signUp .input-group input:focus,
+.container .signUp .input-group input:valid {
+    border-color: #a29bfe;
+}
+
+select {
+    width: 100%;
+    border: 2px solid #e7e7e7;
+    padding: 15px 20px;
+    margin-top: 4px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    transition: .3s;
+}
+
+.container .signUp .input-group select:valid {
+    border-color: #a29bfe;
+}
+
+.button {
+    width: 230px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 200px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    -o-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+.button:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.button:focus {
+    outline: none;
+}
+
+.button.color {
+    background-image: linear-gradient(to right,
+            #6253e1,
+            #852d91,
+            #a29bfe,
+            #ffcccc);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+.input._error {
+    box-shadow: 0 0 15px red;
+}
+
+.form {}
+
+.form__body {
+   
+}
+
+.form__body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.4) url("/loading.gif") center / 50px no-repeat ;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.form__body._sending::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+._sending {}
