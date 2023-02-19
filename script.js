@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             form.classList.add('_sending');
             let response = await fetch('sendmail.php', {
                 method: 'POST',
-                body: formData 
+                // body: formData 
             });
             if(response.ok){
                 let result = await response.json();
@@ -69,3 +69,4 @@ document.addEventListener('DOMContentLoaded', function () {
         return !/^w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
 });
+

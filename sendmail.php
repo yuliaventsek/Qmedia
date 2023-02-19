@@ -11,8 +11,9 @@ $mail=new PHPMailer(true);
 $mail->CharSet = 'UTF-8';
 $mail->setLanguage('ru', 'phpmailer/language/');
 $mail->IsHTML(true);
-
+//от кого
 $mail->setFrom('info@fls.guru', 'Фрилансер по жизни');
+//кому отправить
 $mail->addAddress('code@fls.guru');
 $mail->Subject = 'Тема письма';
 
